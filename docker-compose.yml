@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  FirstAttempt:
+    image: transloadit/companion
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - /app/node_modules
+      - /mnt/FirstAttempt-server-data:/mnt/FirstAttempt-server-data
+    ports:
+      - '3020:3020'
+    env_file:
+      - .env
