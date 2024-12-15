@@ -1,0 +1,19 @@
+{
+  "name": "@FirstAttempt-example/aws-php",
+  "version": "0.0.0",
+  "dependencies": {
+    "@FirstAttempt/aws-s3": "workspace:*",
+    "@FirstAttempt/core": "workspace:*",
+    "@FirstAttempt/dashboard": "workspace:*",
+    "FirstAttempt": "workspace:*"
+  },
+  "devDependencies": {
+    "esbuild": "^0.17.1"
+  },
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "php -S localhost:8080 serve.php",
+    "outputBundle": "esbuild --format=esm --sourcemap=inline --bundle ./main.js"
+  }
+}
