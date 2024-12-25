@@ -1,0 +1,22 @@
+{
+  "name": "@FirstAttempt-example/bundled",
+  "version": "0.0.0",
+  "dependencies": {
+    "@FirstAttempt/core": "workspace:*",
+    "@FirstAttempt/dashboard": "workspace:*",
+    "@FirstAttempt/google-drive": "workspace:*",
+    "@FirstAttempt/instagram": "workspace:*",
+    "@FirstAttempt/tus": "workspace:*",
+    "@FirstAttempt/url": "workspace:*",
+    "@FirstAttempt/webcam": "workspace:*"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.0"
+  },
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "parcel build index.html",
+    "dev": "parcel index.html"
+  }
+}
